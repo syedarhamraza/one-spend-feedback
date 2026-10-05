@@ -1,0 +1,79 @@
+name: Bug report
+description: Something crashes, looks wrong or doesn't work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Issues are **public**, so don't include card numbers, bank details or other personal information, and blur private details in screenshots.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the Upcoming tab
+        2. Tap ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in the app?
+      options:
+        - Subscriptions list
+        - Adding or editing a subscription
+        - Upcoming
+        - Analytics
+        - Reminders / notifications
+        - Payment methods / cards
+        - Categories
+        - Backup, restore or export
+        - Settings
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Sometimes
+        - Only once
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Settings › About One Spend
+      placeholder: 1.0.0 Alpha 3
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone model
+      placeholder: Galaxy S24
+    validations:
+      required: true
+  - type: input
+    id: android-version
+    attributes:
+      label: Android version
+      placeholder: Android 15 / One UI 7
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or screen recording
+      description: Drag files here. Blur anything private first.

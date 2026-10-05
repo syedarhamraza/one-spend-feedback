@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest an idea or an improvement.
+labels: [feature]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: The problem or need, not just the solution. For example "I want to see how much I spent on streaming last year".
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How you imagine it working. Sketches and screenshots of other apps are welcome.
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often would you use it?
+      options:
+        - Every day
+        - Every week
+        - Every month
+        - Now and then
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
